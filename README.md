@@ -1,2 +1,2 @@
 # RegisterActivity
-A registration page with a small popup feedback
+A registration page with a popup feedback
