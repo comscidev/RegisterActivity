@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.signup"
+    namespace = "com.example.groupactivity"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.signup"
+        applicationId = "com.example.groupactivity"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -20,7 +20,10 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
@@ -36,6 +39,7 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.firebase.firestore)
+    implementation ("com.google.firebase:firebase-firestore:24.0.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

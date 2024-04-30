@@ -1,4 +1,4 @@
-package com.example.signup;
+package com.example.groupactivity;
 
 import org.junit.Test;
 
