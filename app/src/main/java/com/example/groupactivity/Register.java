@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -37,6 +38,15 @@ public class Register extends AppCompatActivity {
         EditText retypePasswordEditText = findViewById(R.id.retype_password);
         Button registerButton = findViewById(R.id.register_btn);
         EditText userTypeEditText = findViewById(R.id.user_type);
+        TextView login = findViewById(R.id.login);
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent GotoLogin = new Intent(Register.this, MainActivity.class);
+                startActivity(GotoLogin);
+            }
+        });
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
